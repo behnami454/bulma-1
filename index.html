@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>bulma</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  </head>
+  <body class="">
+  <section class="section has-background-info">
+    <div class="container">
+      <h1 class="title has-text-light">
+        this is bulma
+      </h1>
+      <p class="subtitle has-text-light">
+        site with <strong class="has-text-light">Bulma</strong>!
+      </p>
+    </div>
+  </section>
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://bulma.io">
+        <img src="./img/download.jpg" width="50" height="100">
+      </a>
+  
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+  
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item">
+          Home
+        </a>
+  
+        <a class="navbar-item">
+          about
+        </a>
+  
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            contact
+          </a>
+  
+          <div class="navbar-dropdown">
+            <a class="navbar-item">
+              instagram
+            </a>
+            <a class="navbar-item">
+              telegram
+            </a>
+            <a class="navbar-item">
+              facebook
+            </a>
+            <hr class="navbar-divider">
+            <a class="navbar-item">
+              Report an issue
+            </a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <div class="buttons">
+            <a class="button is-info">
+              <strong>Sign up</strong>
+            </a>
+            <a class="button is-light">
+              Log in
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <section class="hero is-primary">
+    <div class="hero-body">
+      <div class="container has-text-centered">
+          <h1 class="title">
+            details
+          </h1>
+        </div>
+    </div> 
+      
+    <div class="hero-foot">
+    <nav class="tabs is-boxed is-fullwidth is-large">
+            <div class="container">
+              <ul>
+                <li class="tab is-active" onclick="openTab(event,'WebDev')"><a >one</a></li>
+                <li class="tab" onclick="openTab(event,'WebAud')"><a >two</a></li>
+                <li class="tab" onclick="openTab(event,'Support')"><a >three</a></li>
+              </ul>
+            </div>
+          </nav>
+      </div>
+    </section>
+    
+    <div class="container section">
+        <div id="WebDev" class="content-tab" >
+            <div class="modal" id="myModal">
+                <div class="modal-background"></div>
+                <div class="modal-card">
+                  <header class="modal-card-head">
+                    <p class="modal-card-title">nothing</p>
+                    <button class="delete" aria-label="close" data-bulma-modal="close"></button>
+                  </header>
+                  <section class="modal-card-body">
+                    <p>sorry but nothing is here</p>
+                  </section>
+                  <footer class="modal-card-foot">
+                    <button class="button" data-bulma-modal="close">Cancel</button>
+                  </footer>
+                </div>
+              </div>
+              
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, fugiat?</p>
+              <br>
+              <button id="btn" class="p-4">Click to Open Modal</button>
+ 
+        </div>
+        <div id="WebAud" class="content-tab" style="display:none">
+            <div class="modal" id="myModal">
+                <div class="modal-background"></div>
+                <div class="modal-card">
+                  <header class="modal-card-head">
+                    <p class="modal-card-title">nothing</p>
+                    <button class="delete" aria-label="close" data-bulma-modal="close"></button>
+                  </header>
+                  <section class="modal-card-body">
+                    <p>sorry but nothing is here</p>
+                  </section>
+                  <footer class="modal-card-foot">
+                    <button class="button" data-bulma-modal="close">Cancel</button>
+                  </footer>
+                </div>
+              </div>
+              
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, fugiat?tjgfk</p>
+              <br>
+              <button id="btn" class="p-4">Click to Open Modal</button>
+  
+        </div>
+        <div id="Support" class="content-tab" style="display:none">
+            <div class="modal" id="myModal">
+                <div class="modal-background"></div>
+                <div class="modal-card">
+                  <header class="modal-card-head">
+                    <p class="modal-card-title">nothing</p>
+                    <button class="delete" aria-label="close" data-bulma-modal="close"></button>
+                  </header>
+                  <section class="modal-card-body">
+                    <p>sorry but nothing is here</p>
+                  </section>
+                  <footer class="modal-card-foot">
+                    <button class="button" data-bulma-modal="close">Cancel</button>
+                  </footer>
+                </div>
+              </div>
+              
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, fuujhgfdxgiat?</p>
+              <br>
+              <button id="btn" class="p-4">Click to Open Modal</button>
+   
+        </div>
+    </div>
+    <divl class="container">
+        <div class="column is-7 is-offset-1">
+     <article class="message is-info">
+       <div class="message-header">
+         <p>something</p>
+         <button class="delete"></button>
+       </div>
+       <div class="message-body">
+         <p> Text </p>
+       </div>
+     </article>
+         </div>
+    
+        
+         <footer class="footer">
+            <div class="content has-text-centered">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, ratione!
+            </div>
+          </footer>
+  <script src="./one.js"></script>
+  </body>
+</html>
